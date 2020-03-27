@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetHouse</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="interface">
+    <header id="cabecalho">
+      <h1>PetHouse</h1>
+       <nav id="menu">
+        <ul>
+           <li>Home</li>
+           <li>Produtos</li>
+           <li>Serviços</li>
+        </ul>
+       </nav>
+
+    </header>
+
+    <figure class="imagem-principal">
+        <img src="foto-imagem.png"  >
+        <figcaption>
+            <h2>PetHouse</h2>
+            <p>Seu pet bem cuidado!</p>
+        </figcaption>
+    </figure>
+
+    <article id=produtos>
+
+     <div class="caixa">
+            <h1>Produtos e Serviços</h1>
+        <div class="box">
+        <img onclick="msgValor(1)"src="https://cdnv2.moovin.com.br/petcenterexpress/imagens/produtos/original/racao-royal-canin-cachorros-mini-indoor-senior-1kg-56f037c7416659828d7f41b935f85176.png" width="300px">
+        <a>Royal Canin  </a>
+        </div>
+
+        <div class="box">
+        <img onclick="msgValor(2)" id="brinquedo" src="https://cdn.awsli.com.br/600x1000/420/420923/produto/32914315/e18dcd94a1.jpg" width="300px">
+        <a>Ossinho  </a>
+        </div>
+
+        <div class="box">
+        <img onclick="msgValor(3)" src="https://araujo.vteximg.com.br/arquivos/ids/3748238-1000-1000/7896183300821_1.jpg?v=636197491007300000" width="300px">
+        <a>Shampoo </a>
+        </div>
+    </div>
+    </article>
+
+    <article id=Serviços>
+        <div class="box">
+            <img onclick="msgValor(4)" src="https://www.bitcao.com.br/blog/wp-content/uploads/2017/02/wsi-imageoptim-tosar-cachorro-seu-peludo-pelado-720x445.png" width="300px" >
+        <a>Tosa </a>
+        </div>
+        <div class="box">
+        <img onclick="msgValor(5)" src="data:image/jpeg;base64,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" width="333px">
+        <a>Banho </a>
+        </div>
+        <div class="box">
+        <img onclick="msgValor(6)" src="https://www.petz.com.br/blog/wp-content/uploads/2019/02/cao-no-banho.jpg" width="278px">
+        <a>Tosa + Banho </a>
+        </div>
+    </article>
+    
+    <footer id="rodape"> 
+        <p >PetHouse</p>
+        <a >49.910.918/0001-67 </a><br>
+        <a >Avenida Brasil, 185</a>
+      </footer>
+</div>
+</body>
+
+<script>
+
+    function msgValor(tipo){
+
+        if(tipo==1){
+            alert("O valor da ração Royal Cannin é R$ 50,00");
+        }
+        else if(tipo==2){
+            alert("O valor do ossinho é igual a R$ 2,00");
+        }
+        else if(tipo==3){
+            alert("O Valor do shampoo é igual a R$ 10,00");
+        }
+        else if(tipo==4){
+            alert("O valor da tosa é igual a R$ 30,00");
+        }
+        else if(tipo==5){
+            
+            alert("O valor do banho é igual a R$ 30,00");
+        }
+       else{
+           alert("O valor da tosa+banho é igual a R$ 50,00");
+       }
+    }
+
+</script>
+</html>
